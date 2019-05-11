@@ -88,3 +88,7 @@ typings/
 .idea/lesTruffes.iml
 .idea/misc.xml
 .idea/workspace.xml
+
+node_modules
+npm-debug.log
+*.sqlite
