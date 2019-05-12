@@ -1,46 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Oscar</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../assets/css/responsive.css">
-    <link rel="stylesheet" href="../assets/css/slider-pro.css">
+extends layout
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(function(){
-            $('#header').load('header.html');
-            $('#footer').load('footer.html');
-        });
-    </script>
+block content
 
-</head>
-
-<body>
-<header id="main_menu" class="header navbar-fixed-top">
-
-    <div id="header">
-    </div>
-</header> <!--End of header -->
-<<!-- About Section -->
-<section id="aboutus" class="aboutus margin-top-120">
+    <body>
+    <!-- About Section -->
     <div class="container">
-
         <div class="col-sm-12">
-            <div class="head_title text-center margin-top-80">
-                <h1>Oscar</h1>
-            </div><!-- End of head title -->
+
             <div class="main_about_area">
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="signle_about_left">
-                            <img src="../assets/images/oscar-fiche-1.jpg"
-                                 width="292"/>
+                            <img src="../public/images/oscar-fiche-1.jpg", width="292"/>
                         </div>
                     </div>
                     <div class="col-sm-6 col-sm-push-1">
@@ -92,6 +63,6 @@
             </div>
         </div><!-- End of col-sm-12 -->
     </div><!-- End of Container -->
-</section><!-- End of about Section -->
-</body>
-</html>
+    </section><!-- End of about Section -->
+    </body>
+    </html>
