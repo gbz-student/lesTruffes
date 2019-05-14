@@ -1,6 +1,7 @@
 #Custom Gabriel
 config/database.js
 
+
 # Logs
 logs
 *.log
