@@ -2,67 +2,46 @@ extends layout
 
 block content
 
-    <body>
-    <!-- About Section -->
-    <div class="container">
-        <div class="col-sm-12">
-
-            <div class="main_about_area">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="signle_about_left">
-                            <img src="../public/images/oscar-fiche-1.jpg", width="292"/>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-sm-push-1">
-                        <div class="single_about">
-                            <div class="separator2"></div>
-                            <div class="column" style="width:100%">
-                                <div class="column-content">
-                                    <div class="clearfix">
-
-                                        <div>
-                                            <table class="table">
-                                                <thead> <!-- En-tête du tableau -->
-                                                <tr>
-                                                    <th scope="col">Nom</th>
-                                                    <th scope="col">Race</th>
-                                                    <th scope="col">Genre</th>
-                                                    <th scope="col">Couleur</th>
-                                                    <th scope="col">Age</th>
-                                                    <th scope="col">Sociabilité</th>
-                                                    <th scope="col">Frais d'adoption</th>
-                                                    <th scope="col">Autre</th>
-                                                </tr>
-                                                </thead>
-
-                                                <tbody> <!-- data -->
-                                                <tr>
-                                                    <td>Oscar</td>
-                                                    <td>X pinscher </td>
-                                                    <td>Mâle </td>
-                                                    <td>Fauve </td>
-                                                    <td>Né le 20 janvier 2019 </td>
-                                                    <td>Ok tout </td>
-                                                    <td>190 euros + chèque de caution de 300 euros qui sera détruit à la stérilisation </td>
-                                                    <td>Vacciné , pucé </td>
-                                                </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <a href="" class="btn btn-default">Adopter</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div><!-- End of col-sm-12 -->
-    </div><!-- End of Container -->
-    </section><!-- End of about Section -->
-    </body>
-    </html>
+    // translate from html with https://pughtml.com/, god bless this website
+    // About Section
+    .container
+        .col-sm-12
+            .main_about_area
+                .row
+                    .col-sm-4
+                        .signle_about_left
+                            img(src='images/oscar-fiche-1.jpg', width='292')
+                    .col-sm-6.col-sm-push-1
+                        .single_about
+                            .separator2
+                            .column(style='width:100%')
+                                .column-content
+                                    .clearfix
+                                        div
+                                            table.table
+                                                thead
+                                                    // En-tête du tableau
+                                                    tr
+                                                        th(scope='col') Nom
+                                                        th(scope='col') Race
+                                                        th(scope='col') Genre
+                                                        th(scope='col') Couleur
+                                                        th(scope='col') Age
+                                                        th(scope='col') Sociabilit&eacute;
+                                                        th(scope='col') Frais d&apos;adoption
+                                                        th(scope='col') Autre
+                                                tbody
+                                                    // data
+                                                    tr
+                                                        td Oscar
+                                                        td X pinscher
+                                                        td M&acirc;le
+                                                        td Fauve
+                                                        td N&eacute; le 20 janvier 2019
+                                                        td Ok tout
+                                                        td 190 euros + ch&egrave;que de caution de 300 euros qui sera d&eacute;truit &agrave; la st&eacute;rilisation
+                                                        td Vaccin&eacute; , puc&eacute;
+                            a.btn.btn-default(href='') Adopter
+        // End of col-sm-12
+    // End of Container
+    // End of about Section
