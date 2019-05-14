@@ -251,11 +251,11 @@ section .subtitle-half h5 {
     font-weight: 100;
     font-size: 17px;
 }
-ul{
+/*ul{
     margin:0;
     padding:0;
     list-style:none;
-}
+}*/
 
 .heading {
     margin-bottom: 4rem;
