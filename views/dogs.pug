@@ -3,36 +3,20 @@ extends layout
 block content
 
 
-    <body>
-
-    <section id="work" class="work sections">
-    <div class="container">
-        <div class="row">
-            <div class="main_mix_content text-center margin-top-30">
-
-
-                <table>
-                    <tr>
-                        <div class="col-sm-4 col-xs-12 mix category-2">
-                            <a href="dog.html">
-                                <img src="images/oscar-avatar.jpg" alt="oscar"/>
-                            </a>
-                        </div>
-                    </tr>
-
-                    <tr>
-                        <div class="col-sm-4 col-xs-12 mix category-2">
-                            <a href="dog.html">
-                                <img src="images/oscar-avatar.jpg" alt="oscar"/>
-                            </a>
-                        </div>
-                    </tr>
-                </table>
-
-            </div>
-        </div><!-- End of row -->
-    </div><!-- End of Contaier -->
-    </section><!-- End of portfolio Section -->
-
-    </body>
-    </html>
+    // translate from html with https://pughtml.com/, god bless this website
+    section#work.work.sections
+        .container
+            .row
+                .main_mix_content.text-center.margin-top-30
+                    table
+                        tr
+                            .col-sm-4.col-xs-12.mix.category-2
+                                a(href='dog.html')
+                                    img(src='images/oscar-avatar.jpg', alt='oscar')
+                        tr
+                            .col-sm-4.col-xs-12.mix.category-2
+                                a(href='dog.html')
+                                    img(src='images/oscar-avatar.jpg', alt='oscar')
+            // End of row
+        // End of Contaier
+    // End of portfolio Section

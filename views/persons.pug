@@ -2,97 +2,50 @@ extends layout
 
 block content
 
-
-    <body>
-    <header id="main_menu" class="header navbar-fixed-top">
-    <div id="header"></div>
-    </header> <!--End of header -->
-    <section id="aboutus" class="aboutus margin-top-120">|
-    <div class="container"><div class="row">         <div class="col-sm-12">                 <div class="head_title text-center margin-top-80">
-    <h1>Personnes enregistrées</h1>
-    </div><!-- End of head title -->
-
-    <div>
-
-    <table class="table">
-
-    <thead> <!-- En-tête du tableau -->
-
-    <tr>
-
-    <th scope="col">Nom</th>
-
-    <th scope="col">Prénom</th>
-
-    <th scope="col">facebook</th>
-
-    <th scope="col">Date de naissance</th>
-
-    <th scope="col">Adresse</th>
-
-    <th scope="col">Maison</th>
-
-    <th scope="col">Portable</th>
-
-    <th scope="col">lieu</th>
-
-    <th scope="col">email</th>
-
-    <th scope="col">bloque</th>
-
-    <th scope="col">prévisite FA</th>
-
-    <th scope="col">FA</th>
-
-    <th scope="col">Statuts</th>
-
-    </tr>
-
-    </thead>
-
-
-
-    <tbody> <!-- data -->
-
-    <tr>
-
-    <td>Simpson</td>
-
-    <td>Homer</td>
-
-    <td>test</td>
-
-    <td>12.20.1956</td>
-
-    <td>rue de truc 24, 45832 Vannes</td>
-
-    <td>Maison</td>
-
-    <td>Portable</td>
-
-    <td>lieu</td>
-
-    <td>email</td>
-
-    <td>bloque</td>
-
-    <td>prévisite FA</td>
-
-    <td>FA</td>
-
-    <td>Statuts</td>
-
-    </tr>
-    </tbody>
-    </table>
-    </div>
-
-    </div><!-- End of col-sm-12 -->
-    </div><!-- End of row -->
-
-
-    </div><!-- End of Container -->
-
-    <hr/>
-
-    </body>
+    // translate from html with https://pughtml.com/, god bless this website
+    section#aboutus.aboutus.margin-top-120
+        | |
+        .container
+            .row
+                .col-sm-12
+                    .head_title.text-center.margin-top-80
+                        h1 Personnes enregistr&eacute;es
+                    // End of head title
+                    div
+                        table.table
+                            thead
+                                // En-tête du tableau
+                                tr
+                                    th(scope='col') Nom
+                                    th(scope='col') Pr&eacute;nom
+                                    th(scope='col') facebook
+                                    th(scope='col') Date de naissance
+                                    th(scope='col') Adresse
+                                    th(scope='col') Maison
+                                    th(scope='col') Portable
+                                    th(scope='col') lieu
+                                    th(scope='col') email
+                                    th(scope='col') bloque
+                                    th(scope='col') pr&eacute;visite FA
+                                    th(scope='col') FA
+                                    th(scope='col') Statuts
+                            tbody
+                                // data
+                                tr
+                                    td Simpson
+                                    td Homer
+                                    td test
+                                    td 12.20.1956
+                                    td rue de truc 24, 45832 Vannes
+                                    td Maison
+                                    td Portable
+                                    td lieu
+                                    td email
+                                    td bloque
+                                    td pr&eacute;visite FA
+                                    td FA
+                                    td Statuts
+                // End of col-sm-12
+            // End of row
+        // End of Container
+        hr
