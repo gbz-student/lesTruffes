@@ -13,6 +13,7 @@ var routes = require('./routes/index');
 var persons  = require('./routes/persons');
 var reserveddogs  = require('./routes/reserveddogs');
 var users  = require('./routes/users');
+var vets  = require('./routes/vets');
 
 var app = express();
 
@@ -37,6 +38,7 @@ app.use('/dogs', dogs);
 app.use('/persons', persons);
 app.use('/reserveddogs', reserveddogs);
 app.use('/users', users);
+app.use('/vets', vets);
 
 
 // catch 404 and forward to error handler
