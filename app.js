@@ -1,18 +1,24 @@
+var dotenv = require('dotenv');
+var dotenvExpand = require('dotenv-expand');
+var myEnv = dotenv.config();
+dotenvExpand(myEnv);
+require('dotenv').config();
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var routes = require('./routes/index');
+
 var about  = require('./routes/about');
 var adoption = require('./routes/adoption');
 var contact = require('./routes/contact');
 var dog  = require('./routes/dog');
 var dogs  = require('./routes/dogs');
-var routes = require('./routes/index');
 var persons  = require('./routes/persons');
 var reserveddogs  = require('./routes/reserveddogs');
-var users  = require('./routes/users');
+// var users  = require('./routes/users');
 var vets  = require('./routes/vets');
 
 var app = express();
@@ -37,7 +43,7 @@ app.use('/dog', dog);
 app.use('/dogs', dogs);
 app.use('/persons', persons);
 app.use('/reserveddogs', reserveddogs);
-app.use('/users', users);
+// app.use('/users', users);
 app.use('/vets', vets);
 
 
