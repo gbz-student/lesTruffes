@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-    const Animal = sequelize.define('Animal', {
+    const animal = sequelize.define('Animal', {
         ICAD: DataTypes.INT,
         Tatouage: DataTypes.STRING,
         NomAnimal: DataTypes.STRING,
@@ -17,8 +17,8 @@ module.exports = (sequelize, DataTypes) => {
         EspeceAnimal:DataTypes.STRING,
         Sexe:DataTypes.STRING
     }, {});
-    Todo.associate = function(models) {
+    animal.associate = function(models) {
         // associations can be defined here
     };
-    return Todo;
+    return animal;
 };
