@@ -1,4 +1,4 @@
-/* jshint indent: 2 */
+'use strict';
 
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('personne', {
@@ -88,6 +88,13 @@ module.exports = function(sequelize, DataTypes) {
       field: 'FA'
     }
   }, {
-    tableName: 'Personne'
+    tableName: 'Personne',
+      classMethods: {
+          associate: function(models) {
+              this.belongsTo(models.Personne, {
+                  foreignKey: 'idLieu'
+              });
+          }
+      }
   });
 };
