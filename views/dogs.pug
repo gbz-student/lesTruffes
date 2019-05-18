@@ -1,4 +1,4 @@
-extends layout
+extends partial/layout
 
 block content
 
@@ -8,14 +8,29 @@ block content
         .container
             .row
                 .main_mix_content.text-center.margin-top-30
+                    div
+                        table.table
+                            thead
+                                // En-tête du tableau
+                                tr
+                                    th(scope='col') Nom
+                                    th(scope='col') Espèce
+                                    th(scope='col') ICAD
+                                    th(scope='col') Race
+                                    th(scope='col') Sexe
+                            tbody
+                                // data
+                                tr
+
+
                     table
                         tr
                             .col-sm-4.col-xs-12.mix.category-2
-                                a(href='dog.html')
+                                a(href='dog')
                                     img(src='images/oscar-avatar.jpg', alt='oscar')
                         tr
                             .col-sm-4.col-xs-12.mix.category-2
-                                a(href='dog.html')
+                                a(href='dog')
                                     img(src='images/oscar-avatar.jpg', alt='oscar')
             // End of row
         // End of Contaier
